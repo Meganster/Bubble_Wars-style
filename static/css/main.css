@@ -118,6 +118,11 @@ input {
     margin: 0;
 }
 
+input:focus {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #4360a1;
+}
 
 
 input.error_input {
