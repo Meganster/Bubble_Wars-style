@@ -1,0 +1,119 @@
+.menu-center-block {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: flex-;*/
+    position: relative;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'LuckiestGuy';
+    src: url('../assets/fonts/LuckiestGuy-Regular.ttf');
+}
+
+/*исправить ширину блока*/
+.title {
+    position: absolute;
+    top: 0;
+    right: 900px;
+    width: 180px;
+    height: 170px;
+    padding: 30px;
+    background: linear-gradient(to bottom, rgba(198, 203, 195, 0.7), rgba(198, 203, 195, 0));
+
+    text-align: center;
+    font-family: "LuckiestGuy";
+    color: #cdff90;
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
+    font-size: 300%;
+    user-select: none;
+}
+
+.level_active {
+    width: 150px;
+    height: 150px;
+    background: url(../img/1.png);
+    background-size: cover;
+}
+
+.level_disabled {
+    width: 150px;
+    height: 150px;
+    background: url(../img/disabled.png);
+    background-size: cover;
+}
+
+.level1 {
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.level2 {
+    margin-left: 40%;
+    margin-top: -40px;
+}
+
+.level3 {
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.level_title_active {
+    position: fixed;
+    padding-top: 50px;
+    margin-left: 65px;
+    font-family: "LuckiestGuy";
+    color: #cdff90;
+    text-decoration: none;
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
+    font-size: 300%;
+}
+
+.level_title_disabled {
+    position: fixed;
+    padding-top: 50px;
+    margin-left: 65px;
+    font-family: "LuckiestGuy";
+    color: #c6cbc3;
+    text-decoration: none;
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
+    font-size: 300%;
+}
+
+.topmenu__buttons-right_container {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    height: 91%;
+    width: 200px;
+    padding: 0 0 0 20px;
+    background: linear-gradient(to bottom, rgba(198, 203, 195, 0.6), rgba(198, 203, 195, 0.1));
+}
+
+/*rooms_info part*/
+.title_right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 170px;
+    padding: 30px;
+    background: linear-gradient(to bottom, rgba(198, 203, 195, 0.7), rgba(198, 203, 195, 0));
+
+    text-align: center;
+    font-family: "LuckiestGuy";
+    color: #cdff90;
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
+    font-size: 300%;
+    user-select: none;
+}
+
+.level_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}

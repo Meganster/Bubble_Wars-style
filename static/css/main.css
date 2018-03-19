@@ -24,11 +24,20 @@ body{
     border-color: rgba(255, 255, 255, 0.4);
 }
 
+a {
+    text-decoration: none;
+}
 
 @font-face {
     font-family: 'LuckiestGuy';
     src: url('../assets/fonts/LuckiestGuy-Regular.ttf');
 }
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-ExtraLight.ttf');
+}
+
 .mainmenu__button {
     width: 300px;
     text-align: center;

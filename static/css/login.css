@@ -34,3 +34,17 @@
     font-family: 'LuckiestGuy';
     src: url('../assets/fonts/LuckiestGuy-Regular.ttf');
 }
+
+.go-to-sigup {
+    font-family: Nunito;
+    color: #f3f8f0;
+    font-size: 18px;
+}
+
+.go-to-sigup__button {
+    display: inline-block;
+    text-decoration: underline;
+}
+.go-to-sigup__button:hover {
+    color: #cdff90;
+}
