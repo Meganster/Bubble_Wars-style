@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/rooms.css">
 </head>
 <body>
@@ -10,20 +11,34 @@
     <div class="menu-center-block">
         <div class="topmenu">
             <div class="topmenu__buttons-left_container">
-                <div class="topmenu__button topmenu__button-back" title="Back"></div>
+                <a href="./menu_logged_in.html">
+                    <div class="topmenu__button topmenu__button-back" title="Back"></div>
+                </a>
+            </div>
+            <div class="topmenu_user__left-position">
+                <a href="./profile.html">
+                    <div class="topmenu__user__avatar"></div>
+                </a>
+                <div class="topmenu__user__name">samokhina</div>
             </div>
             <div class="topmenu__buttons-container">
                 <div class="topmenu__button topmenu__button-mute m-unmuted" title="Mute"></div>
-                <div class="topmenu__button topmenu__button-settings" title="Settings"></div>
+                <a href="./settings.html">
+                    <div class="topmenu__button topmenu__button-settings"></div>
+                </a>
             </div>
-            <div class="title">
-                Bubble Wars
-            </div>
+            <a href="./menu_logged_in.html">
+                <div class="topmenu_title__left-position">
+                    Bubble Wars
+                </div>
+            </a>
         </div>
 
-        <div class="level1 level_active">
-            <a href="./rooms_info.html"><span class="level_title_active">1</span></a>
-        </div>
+        <a href="./rooms_info.html">
+            <div class="level1 level_active">
+                <span class="level_title_active">1</span>
+            </div>
+        </a>
 
         <div class="level2 level_disabled">
             <span class="level_title_disabled">2</span>
@@ -31,6 +46,14 @@
 
         <div class="level3 level_disabled">
             <span class="level_title_disabled">3</span>
+        </div>
+
+        <div class="level4 level_disabled">
+            <span class="level_title_disabled">4</span>
+        </div>
+
+        <div class="level5 level_disabled">
+            <span class="level_title_disabled">5</span>
         </div>
     </div>
 </div>

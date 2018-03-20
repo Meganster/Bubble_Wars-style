@@ -1,5 +1,5 @@
 /*исправить ширину блока*/
-.title{
+.title {
     position: absolute;
     top: 0;
     right: 900px;
@@ -11,7 +11,7 @@
     text-align: center;
     font-family: "LuckiestGuy";
     color: #cdff90;
-    text-shadow: 2px 5px 2px rgba(0,0,0,0.4);
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
     font-size: 300%;
     user-select: none;
 }
@@ -20,11 +20,10 @@
     text-align: center;
     font-family: "LuckiestGuy";
     color: #c6cbc3;
-    text-shadow: 2px 3px 2px rgba(0,0,0,0.4);
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.4);
     font-size: 400%;
     user-select: none;
 }
-
 
 .topmenu__buttons-container {
     width: 70px;
@@ -33,12 +32,12 @@
 .volume-settings {
     margin-left: 60px;
 }
+
 .volume-settings__title {
     font-family: Nunito;
     color: #f3f8f0;
     font-size: 20px;
 }
-
 
 .theme-settings {
     margin-left: 60px;
@@ -50,6 +49,7 @@
     color: #f3f8f0;
     font-size: 20px;
 }
+
 .theme-settings__themes {
     display: flex;
     flex-direction: row;
@@ -74,9 +74,74 @@
     border-color: #cdff90;
     background-color: #62a7ee;
 }
+
 .second-block {
     background-color: #eb9d03;
 }
+
 .third-block {
     background-color: aquamarine;
+}
+
+.volume-settings__slider {
+    margin-top: 30px;
+}
+
+.volume-settings__sound-level {
+    margin-left: 10px;
+    font-size: 30px;
+    font-family: "LuckiestGuy";
+    color: #cdff90;
+}
+
+/*CSS style for ползунок*/
+/* контейнер */
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 260px;
+    height: 20px;
+    padding: 0;
+    box-shadow: inset 0 0 0 2px #2D7CFA;
+    background: #fff;
+    overflow: hidden;
+}
+
+/* Линия-ндикатор для Firefox */
+input[type=range]::-moz-range-track {
+    background: none;
+    border: none;
+}
+
+/* ползунок в Firefox */
+input[type=range]::-moz-range-thumb {
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 70%/30%;
+    border: 2px solid #818181;
+    box-shadow: -13px 0 #cdff90, -26px 0 #cdff90, -39px 0 #cdff90,
+    -52px 0 #cdff90, -65px 0 #cdff90, -78px 0 #cdff90,
+    -91px 0 #cdff90, -104px 0 #cdff90, -117px 0 #cdff90,
+    -130px 0 #cdff90, -143px 0 #cdff90, -156px 0 #cdff90,
+    -169px 0 #cdff90, -182px 0 #cdff90, -195px 0 #cdff90,
+    -208px 0 #cdff90, -221px 0 #cdff90, -234px 0 #cdff90,
+    -247px 0 #cdff90, -260px 0 #cdff90;
+}
+
+/* ползунок в Хроме */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 70%/30%;
+    border: 2px solid #818181;
+    background: #fff;
+    box-shadow: -13px 0 #cdff90, -26px 0 #cdff90, -39px 0 #cdff90,
+    -52px 0 #cdff90, -65px 0 #cdff90, -78px 0 #cdff90,
+    -91px 0 #cdff90, -104px 0 #cdff90, -117px 0 #cdff90,
+    -130px 0 #cdff90, -143px 0 #cdff90, -156px 0 #cdff90,
+    -169px 0 #cdff90, -182px 0 #cdff90, -195px 0 #cdff90,
+    -208px 0 #cdff90, -221px 0 #cdff90, -234px 0 #cdff90,
+    -247px 0 #cdff90, -260px 0 #cdff90;
 }
