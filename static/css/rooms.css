@@ -15,24 +15,6 @@
     src: url('../assets/fonts/LuckiestGuy-Regular.ttf');
 }
 
-/*исправить ширину блока*/
-.rooms_title {
-    position: absolute;
-    top: 0;
-    right: 900px;
-    width: 180px;
-    height: 170px;
-    padding: 30px;
-    background: linear-gradient(to bottom, rgba(198, 203, 195, 0.7), rgba(198, 203, 195, 0));
-
-    text-align: center;
-    font-family: "LuckiestGuy";
-    color: #cdff90;
-    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
-    font-size: 300%;
-    user-select: none;
-}
-
 .level_active {
     width: 150px;
     height: 150px;
@@ -97,23 +79,6 @@
 }
 
 /*rooms_info part*/
-.title_right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 180px;
-    height: 170px;
-    padding: 30px;
-    background: linear-gradient(to bottom, rgba(198, 203, 195, 0.7), rgba(198, 203, 195, 0));
-
-    text-align: center;
-    font-family: "LuckiestGuy";
-    color: #cdff90;
-    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
-    font-size: 300%;
-    user-select: none;
-}
-
 .level_img {
     align-content: center;
     width: 250px;
