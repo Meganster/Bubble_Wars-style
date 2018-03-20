@@ -25,15 +25,6 @@
     flex-direction: row;
 }
 
-.topmenu_user__leftmargin {
-    position: absolute;
-    top: 10px;
-    left: 70px;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-}
-
 .topmenu__user__avatar {
     margin: 5px;
     width: 40px;

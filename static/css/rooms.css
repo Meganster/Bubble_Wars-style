@@ -36,7 +36,7 @@
 .level_active {
     width: 150px;
     height: 150px;
-    background: url(../img/1.png);
+    background: url(../img/active.png);
     background-size: cover;
 }
 
