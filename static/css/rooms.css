@@ -23,6 +23,15 @@
 }
 
 .level_active:hover {
+    -webkit-transform: scale(1.2, 1.2);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 550ms;
+    -moz-transform: scale(1.2, 1.2);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 550ms;
+}
+
+.level_active:hover {
     width: 150px;
     height: 150px;
     background: url(../img/1_1.png);
@@ -34,6 +43,22 @@
     height: 150px;
     background: url(../img/disabled.png);
     background-size: cover;
+}
+
+.level_disabled:hover {
+    animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+}
+
+@keyframes trambling-animation {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30% {
+        transform: rotate(-10deg);
+    }
+    20%, 40% {
+        transform: rotate(10deg);
+    }
 }
 
 .level_choosed {
