@@ -1,7 +1,3 @@
-@font-face {
-    font-family: 'LuckiestGuy';
-    src: url('../assets/fonts/LuckiestGuy-Regular.ttf');
-}
 .title{
     text-align: center;
     font-family: "LuckiestGuy";
@@ -38,11 +34,6 @@
     height: 50px;
 }
 
-
-@font-face {
-    font-family: 'Nunito';
-    src: url('../assets/fonts/Nunito-ExtraLight.ttf');
-}
 .topmenu__user__name {
     padding: 10px 0 0 8px;
     font-family: "Nunito";

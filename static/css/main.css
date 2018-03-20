@@ -38,6 +38,11 @@ a {
     src: url('../assets/fonts/Nunito-ExtraLight.ttf');
 }
 
+@font-face {
+    font-family: Heebo-Bold;
+    src: url('../assets/fonts/Heebo-Bold.ttf');
+}
+
 .mainmenu__button {
     width: 300px;
     text-align: center;
@@ -55,7 +60,31 @@ a {
 }
 
 
+.topmenu_title__left-position {
+    position: absolute;
+    top: 0;
+    right: 900px;
+    width: 180px;
+    height: 170px;
+    padding: 30px;
+    background: linear-gradient(to bottom, rgba(198, 203, 195, 0.7), rgba(198, 203, 195, 0));
 
+    text-align: center;
+    font-family: "LuckiestGuy";
+    color: #cdff90;
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
+    font-size: 300%;
+    user-select: none;
+}
+
+.topmenu_user__left-position {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
 
 .topmenu {
     height: 60px;
