@@ -11,6 +11,7 @@
     src: url('../assets/fonts/Heebo-Bold.ttf');
 }
 body {
+    background-image: url("../assets/bubbles_.png");
     background-color: #62a7ee;
     display: flex;
     flex-direction: row;
@@ -52,6 +53,9 @@ body {
 .color-box-third {
     background-color: #c6cbc3;
 }
+.color-box-fourth {
+    background-color: #f3f8f0;
+}
 
 
 
@@ -59,6 +63,8 @@ body {
 
 .input_row {
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
 }
 input {
     outline: none;
@@ -136,4 +142,84 @@ input.correct_input {
     font-family: Heebo-Bold;
     font-size: 50px;
     color: #f3f8f0;
+}
+
+.main-button {
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 45px;
+    font-family: "LuckiestGuy";
+    padding: 25px 80px 10px 80px;
+    user-select: none;
+    color: #c6cbc3;
+}
+.main-button:hover {
+    opacity: 0.8;
+    font-size: 60px;
+    padding: 15px 80px 5px 80px;
+}
+
+
+.buttons-container {
+    height: 50px;
+    width: 220px;
+}
+.button {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    background-size: cover;
+    user-select: none;
+}
+.button:hover {
+    opacity: 0.8;
+    height: 50px;
+    width: 50px;
+    margin: 0;
+}
+.topmenu__button-mute.m-unmuted {
+    background-image: url('../assets/icons/i-unmuted.png');
+}
+.topmenu__button-mute.m-muted {
+    background-image: url('../assets/icons/i-muted.png');
+}
+.topmenu__button-settings {
+    background-image: url('../assets/icons/i-settings.png');
+}
+.topmenu__button-back {
+    background-image: url('../assets/icons/i-back.png');
+}
+
+
+.topmenu__user {
+    height: 50px;
+}
+
+.topmenu__user {
+    display: flex;
+    flex-direction: row;
+}
+
+.topmenu__user__avatar {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    background: url("/static/assets/avatar.jpg");
+    background-size: cover;
+    border-radius: 100%;
+}
+.topmenu__user__avatar:hover {
+    margin: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.topmenu__user__name {
+    padding: 10px 0 0 8px;
+    font-family: "Nunito";
+    color: #f3f8f0;
+    font-size: 20px;
 }
