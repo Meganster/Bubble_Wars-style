@@ -24,7 +24,9 @@
         <div class="volume-settings">
             <div class="volume-settings__title">Set volume:</div>
             <div class="volume-settings__slider">
-
+                <input type="range" value="0" max="100"
+                       onchange="document.getElementById('rangeValue').innerHTML = this.value;">
+                <span id="rangeValue" class="volume-settings__sound-level">0</span>
             </div>
         </div>
         <div class="theme-settings">
