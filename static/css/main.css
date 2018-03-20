@@ -1,11 +1,13 @@
-html{
+html {
     height: 100%;
 }
-body{
+
+body {
     height: 100%;
     margin: 0 0;
 }
-.menu{
+
+.menu {
     height: 100%;
     width: 100%;
     display: flex;
@@ -16,7 +18,8 @@ body{
     background-size: 30%;
     background-color: #62a7ee;
 }
-.menu-center-block{
+
+.menu-center-block {
     height: 100%;
     width: 900px;
     background: rgba(98, 167, 238, 0.8);
@@ -48,19 +51,18 @@ a {
     user-select: none;
     color: #c6cbc3;
 }
+
 .mainmenu__button:hover {
     opacity: 0.8;
     font-size: 60px;
     padding: 15px 80px 5px 80px;
 }
 
-
-
-
 .topmenu {
     height: 60px;
     position: relative;
 }
+
 .topmenu__buttons-container {
     position: absolute;
     top: 10px;
@@ -68,6 +70,7 @@ a {
     height: 50px;
     width: 120px;
 }
+
 .topmenu__buttons-left_container {
     position: absolute;
     top: 10px;
@@ -76,6 +79,7 @@ a {
     width: 70px;
     padding: 0 0 0 20px;
 }
+
 .topmenu__button {
     height: 40px;
     width: 40px;
@@ -85,32 +89,35 @@ a {
     background-size: cover;
     user-select: none;
 }
+
 .topmenu__button:hover {
     opacity: 0.8;
     height: 50px;
     width: 50px;
     margin: 0;
 }
+
 .topmenu__button-mute.m-unmuted {
     background-image: url('../assets/icons/i-unmuted.png');
 }
+
 .topmenu__button-mute.m-muted {
     background-image: url('../assets/icons/i-muted.png');
 }
+
 .topmenu__button-settings {
     background-image: url('../assets/icons/i-settings.png');
 }
+
 .topmenu__button-back {
     background-image: url('../assets/icons/i-back.png');
 }
-
 
 .lowermenu {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 /*цвет текста?*/
 input {
@@ -133,12 +140,12 @@ input:focus {
     border-color: #4360a1;
 }
 
-
 input.error_input {
     border-style: solid;
     border-width: 1px;
     border-color: #a10918;
 }
+
 input.correct_input {
     border-style: solid;
     border-width: 1px;
@@ -162,6 +169,7 @@ input.correct_input {
     justify-content: center;
     text-align: center;
 }
+
 .arrow_block {
     width: 15px;
     display: flex;

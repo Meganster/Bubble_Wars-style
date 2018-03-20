@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/rooms.css">
 </head>
 <body>
@@ -10,24 +11,33 @@
     <div class="menu-center-block">
         <div class="topmenu">
             <div class="topmenu__buttons-left_container">
-                <div class="topmenu__button topmenu__button-back" title="Back"></div>
+                <a href="./menu_logged_in.html">
+                    <div class="topmenu__button topmenu__button-back" title="Back"></div>
+                </a>
+            </div>
+            <div class="topmenu_user__leftmargin">
+                <a href="./profile.html">
+                    <div class="topmenu__user__avatar"></div>
+                </a>
+                <div class="topmenu__user__name">samokhina</div>
             </div>
             <div class="topmenu__buttons-container">
                 <div class="topmenu__button topmenu__button-mute m-unmuted" title="Mute"></div>
                 <div class="topmenu__button topmenu__button-settings" title="Settings"></div>
             </div>
-            <div class="title">
-                Bubble Wars
-            </div>
-
-
+            <a href="./menu_logged_in.html">
+                <div class="rooms_title">
+                    Bubble Wars
+                </div>
+            </a>
         </div>
 
         <div class="topmenu__buttons-right_container">
-            <!--<div class="title_right">-->
-            <!--<img class="level_img" src="../img/level1.jpeg">-->
-            <!--</div>-->
             <img class="level_img" src="../img/level1.jpeg">
+
+            <div class="rooms__button">Single player</div>
+
+            <div class="rooms__button">Multi player</div>
         </div>
 
         <div class="level1 level_active">

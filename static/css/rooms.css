@@ -16,7 +16,7 @@
 }
 
 /*исправить ширину блока*/
-.title {
+.rooms_title {
     position: absolute;
     top: 0;
     right: 900px;
@@ -89,9 +89,11 @@
     top: 70px;
     right: 0px;
     height: 91%;
-    width: 200px;
-    padding: 0 0 0 20px;
-    background: linear-gradient(to bottom, rgba(198, 203, 195, 0.6), rgba(198, 203, 195, 0.1));
+    width: 400px;
+    background: linear-gradient(to left, rgba(198, 203, 195, 0.8), rgba(198, 203, 195, 0.0));
+    /*background: linear-gradient(to top, rgba(198, 203, 195, 0.8), rgba(198, 203, 195, 0.5));*/
+    /*border-top-left-radius: 20px;*/
+    /*border-top-right-radius: 20px;*/
 }
 
 /*rooms_info part*/
@@ -113,7 +115,25 @@
 }
 
 .level_img {
-    width: 150px;
+    width: 250px;
     height: 150px;
-    border-radius: 20px;
+    border-radius: 15px;
+    margin: 80px 0 0 100px;
+}
+
+.rooms__button {
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: "LuckiestGuy";
+    padding: 25px 80px 10px 80px;
+    user-select: none;
+    color: #c6cbc3;
+}
+
+.rooms__button:hover {
+    opacity: 0.8;
+    font-size: 35px;
+    padding: 15px 80px 5px 80px;
 }

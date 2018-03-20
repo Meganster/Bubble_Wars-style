@@ -2,11 +2,12 @@
     font-family: 'LuckiestGuy';
     src: url('../assets/fonts/LuckiestGuy-Regular.ttf');
 }
-.title{
+
+.title {
     text-align: center;
     font-family: "LuckiestGuy";
     color: #cdff90;
-    text-shadow: 2px 5px 2px rgba(0,0,0,0.4);
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
     font-size: 800%;
     margin: 70px 40px 50px 40px;
     user-select: none;
@@ -24,6 +25,15 @@
     flex-direction: row;
 }
 
+.topmenu_user__leftmargin {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
 .topmenu__user__avatar {
     margin: 5px;
     width: 40px;
@@ -32,17 +42,18 @@
     background-size: cover;
     border-radius: 100%;
 }
+
 .topmenu__user__avatar:hover {
     margin: 0;
     width: 50px;
     height: 50px;
 }
 
-
 @font-face {
     font-family: 'Nunito';
     src: url('../assets/fonts/Nunito-ExtraLight.ttf');
 }
+
 .topmenu__user__name {
     padding: 10px 0 0 8px;
     font-family: "Nunito";
