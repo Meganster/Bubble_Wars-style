@@ -168,3 +168,12 @@
 .rooms_info__button-with-info {
     margin: 25px 0 0 0;
 }
+
+.leaderboard {
+    padding-left: 400px;
+    padding-top: 20px;
+    font-family: Nunito;
+    font-size: 20px;
+    color: #cdff90;
+    font-weight: bold;
+}

@@ -1,5 +1,5 @@
 /*исправить ширину блока*/
-.title{
+.title {
     position: absolute;
     top: 0;
     right: 900px;
@@ -11,7 +11,7 @@
     text-align: center;
     font-family: "LuckiestGuy";
     color: #cdff90;
-    text-shadow: 2px 5px 2px rgba(0,0,0,0.4);
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
     font-size: 300%;
     user-select: none;
 }
@@ -20,18 +20,17 @@
     text-align: center;
     font-family: "LuckiestGuy";
     color: #c6cbc3;
-    text-shadow: 2px 3px 2px rgba(0,0,0,0.4);
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.4);
     font-size: 400%;
     user-select: none;
     margin-bottom: 20px;
 }
 
-
 .leaderboard__row {
     display: flex;
     flex-direction: row;
     font-family: Heebo-Bold;
-    text-shadow: 1px 2px 1px rgba(0,0,0,0.4);
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
     color: #f3f8f0;
     font-size: 20px;
     font-weight: bold;
@@ -41,10 +40,12 @@
     color: #87eb84;
     font-size: 50px;
 }
+
 .second {
     color: #5723e2;
     font-size: 35px;
 }
+
 .third {
     color: #eee626;
     font-size: 25px;
@@ -55,6 +56,7 @@
     height: 45px;
     text-align: center;
 }
+
 .leaderboard__row__rating {
     margin-left: 30px;
 }
@@ -64,7 +66,8 @@
     margin: 5px 0;
     border-radius: 4px;
 }
-.pagination>li {
+
+.pagination > li {
     display: inline;
     position: relative;
     float: left;
@@ -79,7 +82,8 @@
     border: 1px solid #ddd;
     margin-left: 0;
 }
-.pagination>li:hover {
+
+.pagination > li:hover {
     background: #cdff90;
 }
 
@@ -92,4 +96,36 @@
 .pagination__last {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+}
+
+.button {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: #c6cbc3;
+    box-shadow: 0 -3px rgba(34, 41, 80, 0.53) inset;
+    transition: 0.2s;
+}
+
+/*.button:hover {*/
+/*background: rgba(120, 125, 117, 0.56);*/
+/*}*/
+
+/*.button:active {*/
+/*background: rgb(33, 147, 90);*/
+/*box-shadow: 0 3px rgb(33, 147, 90) inset;*/
+/*}*/
+
+.paginator__next {
+    margin-left: 280px;
+}
+
+.paginator__previous {
+    margin-left: 20px;
+}
+
+.leaderboard__paginator {
+    margin-top: 20px;
 }
