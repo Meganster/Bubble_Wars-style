@@ -15,13 +15,21 @@
     font-size: 300%;
     user-select: none;
 }
-
+.profile-title {
+    text-align: center;
+    font-family: "LuckiestGuy";
+    color: #c6cbc3;
+    text-shadow: 2px 3px 2px rgba(0,0,0,0.4);
+    font-size: 400%;
+    user-select: none;
+    margin-bottom: 20px;
+}
 .user {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 20px;
     user-select: none;
 }
 

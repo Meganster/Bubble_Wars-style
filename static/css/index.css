@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'LuckiestGuy';
+    src: url('../assets/fonts/LuckiestGuy-Regular.ttf');
+}
+@font-face {
+    font-family: Heebo-Bold;
+    src: url('../assets/fonts/Heebo-Bold.ttf');
+}
+body {
+    background-image: url("../assets/bubbles_.png");
+    background-color: #62a7ee;
+    display: flex;
+    flex-direction: row;
+}
+.left-col {
+    padding: 30px 0 0 30px;
+}
+.right-col {
+    padding: 30px 0 0 100px;
+}
+.title {
+    font-family: Nunito;
+    font-size: 40px;
+}
+
+.color-palette {
+    margin-bottom: 30px;
+}
+.color-palette__color-boxes {
+    display: flex;
+    flex-direction: row;
+}
+
+.color-palette__color-boxes__box {
+    width: 80px;
+    height: 80px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.color-box-first {
+    background-color: #62a7ee;
+}
+.color-box-second {
+    background-color: #cdff90;
+}
+.color-box-third {
+    background-color: #c6cbc3;
+}
+.color-box-fourth {
+    background-color: #f3f8f0;
+}
+
+
+
+
+
+.input_row {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+input {
+    outline: none;
+    height: 50px;
+    width: 260px;
+    font-size: large;
+    font-family: "Nunito";
+    padding: 0 0 0 20px;
+    margin: 8px;
+    opacity: 0.8;
+    border-radius: 50px;
+    border: none;
+    margin: 0;
+}
+input:focus {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #4360a1;
+}
+
+input.error_input {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #a10918;
+}
+input.correct_input {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #246919;
+}
+
+.input_block {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-left: 120px;
+}
+
+.error_text {
+    width: 150px;
+    background-color: #a10918;
+    color: white;
+    font-family: 'Nunito';
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.arrow_block {
+    width: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.arrow {
+    width: 15px;
+    height: 15px;
+    background-image: url("../assets/icons/arrow.png");
+    background-size: cover;
+}
+
+.font-LuckiestGuy {
+    font-family: LuckiestGuy;
+    font-size: 60px;
+    color: #f3f8f0;
+}
+.font-Nunito {
+    font-family: Nunito;
+    font-size: 50px;
+    color: #f3f8f0;
+}
+.font-Heebo-Bold {
+    font-family: Heebo-Bold;
+    font-size: 50px;
+    color: #f3f8f0;
+}
+
+.main-button {
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 45px;
+    font-family: "LuckiestGuy";
+    padding: 25px 80px 10px 80px;
+    user-select: none;
+    color: #c6cbc3;
+}
+.main-button:hover {
+    opacity: 0.8;
+    font-size: 60px;
+    padding: 15px 80px 5px 80px;
+}
+
+
+.buttons-container {
+    height: 50px;
+    width: 220px;
+}
+.button {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    background-size: cover;
+    user-select: none;
+}
+.button:hover {
+    opacity: 0.8;
+    height: 50px;
+    width: 50px;
+    margin: 0;
+}
+.topmenu__button-mute.m-unmuted {
+    background-image: url('../assets/icons/i-unmuted.png');
+}
+.topmenu__button-mute.m-muted {
+    background-image: url('../assets/icons/i-muted.png');
+}
+.topmenu__button-settings {
+    background-image: url('../assets/icons/i-settings.png');
+}
+.topmenu__button-back {
+    background-image: url('../assets/icons/i-back.png');
+}
+
+
+.topmenu__user {
+    height: 50px;
+}
+
+.topmenu__user {
+    display: flex;
+    flex-direction: row;
+}
+
+.topmenu__user__avatar {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    background: url("/static/assets/avatar.jpg");
+    background-size: cover;
+    border-radius: 100%;
+}
+.topmenu__user__avatar:hover {
+    margin: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.topmenu__user__name {
+    padding: 10px 0 0 8px;
+    font-family: "Nunito";
+    color: #f3f8f0;
+    font-size: 20px;
+}

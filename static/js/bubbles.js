@@ -6,7 +6,11 @@ jQuery(document).ready(function ($) {
     // Define a blank array for the effect positions. This will be populated based on width of the title.
     var bArray = [];
     // Define a size array, this will be used to vary bubble sizes
+<<<<<<< HEAD
     var sArray = [150, 110, 90, 61];
+=======
+    var sArray = [4, 6, 8, 10];
+>>>>>>> 4538ea0240c2b447f36042771e7ca231a36aac9f
 
     // Push the header width values to bArray
     for (var i = 0; i < $('.bubbles').width(); i++) {
@@ -26,22 +30,36 @@ jQuery(document).ready(function ($) {
         var size = randomValue(sArray);
         // New bubble appeneded to div with it's size and left position being set inline
         // Left value is set through getting a random value from bArray
+<<<<<<< HEAD
         $('.bubbles').append('<div class="individual-bubble" ' + 
         'style="left: ' + randomValue(bArray) + 'px; ' +
         'width: ' + size + 'px; ' +
         'height:' + size + 'px;"></div>');
+=======
+        $('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
+>>>>>>> 4538ea0240c2b447f36042771e7ca231a36aac9f
 
         // Animate each bubble to the top (bottom 100%) and reduce opacity as it moves
         // Callback function used to remove finsihed animations from the page
         $('.individual-bubble').animate({
+<<<<<<< HEAD
                 'bottom': '110%'//,
                 // 'opacity': '-=0.7'
             }, 5000, function () {
+=======
+                'bottom': '100%',
+                'opacity': '-=0.7'
+            }, 3000, function () {
+>>>>>>> 4538ea0240c2b447f36042771e7ca231a36aac9f
                 $(this).remove()
             }
         );
 
 
+<<<<<<< HEAD
     }, 250);
+=======
+    }, 350);
+>>>>>>> 4538ea0240c2b447f36042771e7ca231a36aac9f
 
 });
