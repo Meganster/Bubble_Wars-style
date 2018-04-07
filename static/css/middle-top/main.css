@@ -112,12 +112,12 @@ a {
 }
 
 .topmenu__buttons-container {
-    right: 0;
-    position: absolute;
+    display: inline-block;
+    /* position: absolute; */
     margin-top: 10px;
     /* right: 0; */
     height: 50px;
-    width: 120px;
+    width: 200px;
 }
 
 .topmenu__buttons-left_container {
@@ -132,7 +132,7 @@ a {
 .topmenu__button {
     height: 40px;
     width: 40px;
-    margin: 5px;
+    margin: 5px 10px 5px 10px;
     display: inline-block;
     cursor: pointer;
     background-size: cover;

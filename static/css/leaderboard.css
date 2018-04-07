@@ -1,72 +1,10 @@
-/*исправить ширину блока*/
-.title {
-    position: absolute;
-    top: 0;
-    right: 900px;
-    width: 180px;
-    height: 170px;
-    padding: 30px;
-    background: linear-gradient(to bottom, rgba(198, 203, 195, 0.7), rgba(198, 203, 195, 0));
-
-    text-align: center;
-    font-family: "LuckiestGuy";
-    color: #cdff90;
-    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
-    font-size: 300%;
-    user-select: none;
-}
-
-.leaderboard__title {
-    text-align: center;
-    font-family: "LuckiestGuy";
-    color: #c6cbc3;
-    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.4);
-    font-size: 400%;
-    user-select: none;
-    margin-bottom: 20px;
-}
-
-.leaderboard__row {
-    display: flex;
-    flex-direction: row;
-    font-family: Nunito;
-    color: #f3f8f0;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.first {
-    color: #87eb84;
-    font-size: 60px;
-}
-
-.second {
-    color: #5723e2;
-    font-size: 35px;
-}
-
-.third {
-    color: #eee626;
-    font-size: 25px;
-}
-
-.leaderboard__row__number {
-    width: 45px;
-    height: 45px;
-    text-align: center;
-}
-
-.leaderboard__row__rating {
-    margin-left: 30px;
-}
-
 .pagination {
     padding-left: 16px;
     margin: 10px 0;
     border-radius: 4px;
 }
 
-.pagination > li {
+.pagination>li {
     display: inline;
     position: relative;
     float: left;
@@ -78,7 +16,7 @@
     margin-left: 0;
 }
 
-.pagination > li:hover {
+.pagination>li:hover {
     background-color: #cdff90;
 }
 
@@ -90,4 +28,43 @@
 .pagination__last {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+}
+
+/* ------------------------------------------- */
+.items {
+    font-family: Nunito;
+    color: white;
+    width: 0;
+    min-width: 20rem;
+    margin: 1em auto auto;
+}
+
+col.place, col.score {
+    width: 10%;
+}
+
+.items td {
+    height: 2.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+    border-bottom: 1px dashed gray;
+    transition: transform 550ms;
+}
+
+.items tr:hover td {
+    border-bottom: 1px dashed white;
+}
+
+.items tr:hover td {
+    transform: scale(1.1);
+    text-shadow: 
+    0 0 30px #ff1212,
+    0 0 10px red;
+}
+
+.you {
+    text-shadow: 
+    0 0 30px #ff1212,
+    0 0 10px red;
+    font-weight: bold;
 }

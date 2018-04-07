@@ -1,4 +1,5 @@
 /*исправить ширину блока*/
+
 .title {
     position: absolute;
     top: 0;
@@ -7,7 +8,6 @@
     height: 170px;
     padding: 30px;
     background: linear-gradient(to bottom, rgba(198, 203, 195, 0.7), rgba(198, 203, 195, 0));
-
     text-align: center;
     font-family: "LuckiestGuy";
     color: #cdff90;
@@ -95,7 +95,9 @@
 }
 
 /*CSS style for ползунок*/
+
 /* контейнер */
+
 input[type=range] {
     -webkit-appearance: none;
     appearance: none;
@@ -108,28 +110,25 @@ input[type=range] {
 }
 
 /* Линия-ндикатор для Firefox */
+
 input[type=range]::-moz-range-track {
     background: none;
     border: none;
 }
 
 /* ползунок в Firefox */
+
 input[type=range]::-moz-range-thumb {
     -moz-appearance: none;
     width: 20px;
     height: 20px;
     border-radius: 70%/30%;
     border: 2px solid #818181;
-    box-shadow: -13px 0 #cdff90, -26px 0 #cdff90, -39px 0 #cdff90,
-    -52px 0 #cdff90, -65px 0 #cdff90, -78px 0 #cdff90,
-    -91px 0 #cdff90, -104px 0 #cdff90, -117px 0 #cdff90,
-    -130px 0 #cdff90, -143px 0 #cdff90, -156px 0 #cdff90,
-    -169px 0 #cdff90, -182px 0 #cdff90, -195px 0 #cdff90,
-    -208px 0 #cdff90, -221px 0 #cdff90, -234px 0 #cdff90,
-    -247px 0 #cdff90, -260px 0 #cdff90;
+    box-shadow: -13px 0 #cdff90, -26px 0 #cdff90, -39px 0 #cdff90, -52px 0 #cdff90, -65px 0 #cdff90, -78px 0 #cdff90, -91px 0 #cdff90, -104px 0 #cdff90, -117px 0 #cdff90, -130px 0 #cdff90, -143px 0 #cdff90, -156px 0 #cdff90, -169px 0 #cdff90, -182px 0 #cdff90, -195px 0 #cdff90, -208px 0 #cdff90, -221px 0 #cdff90, -234px 0 #cdff90, -247px 0 #cdff90, -260px 0 #cdff90;
 }
 
 /* ползунок в Хроме */
+
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 20px;
@@ -137,11 +136,5 @@ input[type=range]::-webkit-slider-thumb {
     border-radius: 70%/30%;
     border: 2px solid #818181;
     background: #fff;
-    box-shadow: -13px 0 #cdff90, -26px 0 #cdff90, -39px 0 #cdff90,
-    -52px 0 #cdff90, -65px 0 #cdff90, -78px 0 #cdff90,
-    -91px 0 #cdff90, -104px 0 #cdff90, -117px 0 #cdff90,
-    -130px 0 #cdff90, -143px 0 #cdff90, -156px 0 #cdff90,
-    -169px 0 #cdff90, -182px 0 #cdff90, -195px 0 #cdff90,
-    -208px 0 #cdff90, -221px 0 #cdff90, -234px 0 #cdff90,
-    -247px 0 #cdff90, -260px 0 #cdff90;
+    box-shadow: -13px 0 #cdff90, -26px 0 #cdff90, -39px 0 #cdff90, -52px 0 #cdff90, -65px 0 #cdff90, -78px 0 #cdff90, -91px 0 #cdff90, -104px 0 #cdff90, -117px 0 #cdff90, -130px 0 #cdff90, -143px 0 #cdff90, -156px 0 #cdff90, -169px 0 #cdff90, -182px 0 #cdff90, -195px 0 #cdff90, -208px 0 #cdff90, -221px 0 #cdff90, -234px 0 #cdff90, -247px 0 #cdff90, -260px 0 #cdff90;
 }
