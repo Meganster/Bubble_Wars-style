@@ -2,15 +2,20 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <title>Donuts wars</title>
+    <link rel="shortcut icon" href="../assets/donut.ico" type="image/x-icon">
+    
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/menu.css">
 </head>
 <body>
-<div class="menu">
+<div class="menu bubbles">
     <div class="menu-center-block">
         <div class="topmenu">
             <div class="topmenu__user">
-                <a href="./profile.html"><div class="topmenu__user__avatar"></div></a>
+                <a href="./profile.html">
+                    <div class="topmenu__user__avatar"></div>
+                </a>
                 <div class="topmenu__user__name">samokhina</div>
             </div>
             <div class="topmenu__buttons-container">
@@ -18,15 +23,32 @@
                 <div class="topmenu__button topmenu__button-settings"></div>
             </div>
         </div>
-        <div class="title">
-            Bubble Wars
-        </div>
-        <div class="lowermenu">
-            <div class="mainmenu__button">Play</div>
-            <a href="./menu_logged_out.html"><div class="mainmenu__button">Log Out</div></a>
-            <div class="mainmenu__button">About</div>
-        </div>
+        <a href="./menu_logged_in.html">
+            <div class="title">
+                <!-- D<span class="o_letter">o</span>nut Wars -->
+                <!-- D<img class="o_letter" src="../assets/donut2.png">nut Wars -->
+                Donuts Wars
+            </div>
+        </a>
+            <div class="lowermenu">
+                <a href="./rooms.html">
+                    <div class="mainmenu__button-play">Play</div>
+                </a>
+                <a href="./leaderboard.html">
+                    <div class="mainmenu__button">Leaders</div>
+                </a>
+                <a href="./about_logged_in.html">
+                    <div class="mainmenu__button">About</div>
+                </a>
+                <a href="./menu_logged_out.html">
+                    <div class="mainmenu__button">Log Out</div>
+                </a>
+            </div>
     </div>
 </div>
+<script src="../js/jQuery.min.js"></script>
+<!-- <script type="text/javascript"
+        src="../js/bubbles.js"> -->
+</script>
 </body>
 </html>

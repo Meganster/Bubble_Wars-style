@@ -2,21 +2,34 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/about.css">
 <body>
 <div class="menu">
     <div class="menu-center-block">
         <div class="topmenu">
             <div class="topmenu__buttons-left_container">
-                <div class="topmenu__button topmenu__button-back" title="Back"></div>
+                <a href="./menu_logged_in.html">
+                    <div class="topmenu__button topmenu__button-back" title="Back"></div>
+                </a>
             </div>
+
+            <div class="topmenu_user__left-position">
+                <a href="./profile.html">
+                    <div class="topmenu__user__avatar"></div>
+                </a>
+                <div class="topmenu__user__name">samokhina</div>
+            </div>
+
             <div class="topmenu__buttons-container">
                 <div class="topmenu__button topmenu__button-mute m-unmuted" title="Mute"></div>
                 <div class="topmenu__button topmenu__button-settings" title="Settings"></div>
             </div>
-            <div class="title">
-                Bubble Wars
-            </div>
+            <a href="./menu_logged_in.html">
+                <div class="topmenu_title__left-position">
+                    Bubble Wars
+                </div>
+            </a>
         </div>
         <div class="about_title">
             About us
@@ -38,9 +51,6 @@
             Kamoldinova Victoria <br/>
             Samokhina Marina <br/>
             Vanyashkin Yura
-        </div>
-
-        <div>
         </div>
     </div>
 </div>

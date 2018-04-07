@@ -15,28 +15,22 @@
     src: url('../assets/fonts/LuckiestGuy-Regular.ttf');
 }
 
-/*исправить ширину блока*/
-.title {
-    position: absolute;
-    top: 0;
-    right: 900px;
-    width: 180px;
-    height: 170px;
-    padding: 30px;
-    background: linear-gradient(to bottom, rgba(198, 203, 195, 0.7), rgba(198, 203, 195, 0));
-
-    text-align: center;
-    font-family: "LuckiestGuy";
-    color: #cdff90;
-    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
-    font-size: 300%;
-    user-select: none;
-}
-
 .level_active {
     width: 150px;
     height: 150px;
-    background: url(../img/1.png);
+    background: url(../img/active.png);
+    background-size: cover;
+    transition: transform 550ms;
+}
+
+.level_active:hover {
+    transform: scale(1.2);
+}
+
+.level_active:hover {
+    width: 150px;
+    height: 150px;
+    background: url(../img/1_1.png);
     background-size: cover;
 }
 
@@ -47,19 +41,27 @@
     background-size: cover;
 }
 
-.level1 {
-    margin-left: 10%;
-    margin-top: 3%;
+.level_disabled:hover {
+    animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
 }
 
-.level2 {
-    margin-left: 40%;
-    margin-top: -40px;
+@keyframes trambling-animation {
+    0%, 50%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30% {
+        transform: rotate(-10deg);
+    }
+    20%, 40% {
+        transform: rotate(10deg);
+    }
 }
 
-.level3 {
-    margin-left: 20%;
-    margin-top: 10%;
+.level_choosed {
+    width: 150px;
+    height: 150px;
+    background: url(../img/1_1.png);
+    background-size: cover;
 }
 
 .level_title_active {
@@ -67,6 +69,7 @@
     padding-top: 50px;
     margin-left: 65px;
     font-family: "LuckiestGuy";
+    /*color: #c6cbc3;*/
     color: #cdff90;
     text-decoration: none;
     text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
@@ -84,36 +87,80 @@
     font-size: 300%;
 }
 
+.level1 {
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.level2 {
+    margin-left: 40%;
+    margin-top: -10%;
+}
+
+.level3 {
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.level4 {
+    margin-left: 50%;
+    margin-top: -5%;
+}
+
+.level5 {
+    margin-left: 75%;
+    margin-top: -2%;
+}
+
+/*******************/
+/*rooms_info part**/
+/******************/
 .topmenu__buttons-right_container {
     position: absolute;
     top: 70px;
     right: 0px;
-    height: 91%;
-    width: 200px;
-    padding: 0 0 0 20px;
-    background: linear-gradient(to bottom, rgba(198, 203, 195, 0.6), rgba(198, 203, 195, 0.1));
-}
-
-/*rooms_info part*/
-.title_right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 180px;
-    height: 170px;
-    padding: 30px;
-    background: linear-gradient(to bottom, rgba(198, 203, 195, 0.7), rgba(198, 203, 195, 0));
-
-    text-align: center;
-    font-family: "LuckiestGuy";
-    color: #cdff90;
-    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
-    font-size: 300%;
-    user-select: none;
+    height: 90%;
+    width: 400px;
+    background: linear-gradient(to left, rgba(198, 203, 195, 0.8), rgba(198, 203, 195, 0.0));
+    /*background: linear-gradient(to top, rgba(198, 203, 195, 0.8), rgba(198, 203, 195, 0.5));*/
+    /*border-top-left-radius: 20px;*/
+    /*border-top-right-radius: 20px;*/
 }
 
 .level_img {
-    width: 150px;
+    align-content: center;
+    width: 250px;
     height: 150px;
-    border-radius: 20px;
+    border-radius: 15px;
+    margin: 80px 0 0 105px;
+}
+
+.rooms__button {
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: "LuckiestGuy";
+    padding: 25px 80px 10px 80px;
+    user-select: none;
+    color: #c6cbc3;
+}
+
+.rooms__button:hover {
+    opacity: 0.8;
+    font-size: 35px;
+    padding: 25px 80px 5px 80px;
+    color: #cdff90;
+}
+
+.info-for-buttons {
+    font-family: Nunito;
+    color: #f3f8f0;
+    font-size: 18px;
+    padding: 5px 60px 5px 115px;
+    text-align: center;
+}
+
+.rooms_info__button-with-info {
+    margin: 25px 0 0 0;
 }
