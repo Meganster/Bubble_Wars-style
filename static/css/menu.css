@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @font-face {
     font-family: 'LuckiestGuy';
     src: url('../assets/fonts/LuckiestGuy-Regular.ttf');
@@ -10,9 +9,6 @@
 }
 
 .title {
-=======
-.title{
->>>>>>> 4538ea0240c2b447f36042771e7ca231a36aac9f
     text-align: center;
     font-family: 'LuckiestGuy';
     /* color: rgb(255, 130, 186); */
@@ -52,14 +48,11 @@
     height: 50px; */
 }
 
-<<<<<<< HEAD
 @font-face {
     font-family: 'Nunito';
     src: url('../assets/fonts/Nunito-ExtraLight.ttf');
 }
 
-=======
->>>>>>> 4538ea0240c2b447f36042771e7ca231a36aac9f
 .topmenu__user__name {
     padding: 10px 0 0 8px;
     font-family: "Nunito";

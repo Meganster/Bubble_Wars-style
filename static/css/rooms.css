@@ -20,23 +20,11 @@
     height: 150px;
     background: url(../img/active.png);
     background-size: cover;
-<<<<<<< HEAD
     transition: transform 550ms;
 }
 
 .level_active:hover {
     transform: scale(1.2);
-=======
-}
-
-.level_active:hover {
-    -webkit-transform: scale(1.2, 1.2);
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 550ms;
-    -moz-transform: scale(1.2, 1.2);
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 550ms;
->>>>>>> 4538ea0240c2b447f36042771e7ca231a36aac9f
 }
 
 .level_active:hover {
@@ -175,16 +163,4 @@
 
 .rooms_info__button-with-info {
     margin: 25px 0 0 0;
-<<<<<<< HEAD
-=======
-}
-
-.leaderboard {
-    padding-left: 400px;
-    padding-top: 20px;
-    font-family: Nunito;
-    font-size: 20px;
-    color: #cdff90;
-    font-weight: bold;
->>>>>>> 4538ea0240c2b447f36042771e7ca231a36aac9f
 }
