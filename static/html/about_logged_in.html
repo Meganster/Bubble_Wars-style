@@ -6,54 +6,62 @@
     <link rel="shortcut icon" href="../assets/donut.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/about.css">
 
     <body>
-        <div class="menu">
-            <div class="menu-center-block">
-                <div class="topmenu">
-                    <div class="topmenu__buttons-left_container">
-                        <a href="./menu_logged_in.html">
-                            <div class="topmenu__button topmenu__button-back" title="Back"></div>
-                        </a>
-                    </div>
-                    <div class="topmenu__buttons-container">
-                        <div class="topmenu__button topmenu__button-mute m-unmuted"></div>
-                        <a href="./settings.html">
-                            <div class="topmenu__button topmenu__button-settings"></div>
-                        </a>
-                    </div>
-                </div>
+        <div class="topmenu">
+            <div class="topmenu__buttons-left_container">
                 <a href="./menu_logged_in.html">
-                    <div class="title__up">
-                        Donuts Wars
-                    </div>
+                    <div class="topmenu__button topmenu__button-back" title="Back"></div>
                 </a>
+            </div>
+            <div class="topmenu_user__left-position">
+                <a href="./profile.html">
+                    <div class="topmenu__user__avatar"></div>
+                </a>
+                <div class="topmenu__user__name">samokhina</div>
+            </div>
+            
+            <div class="topmenu__buttons-container">
+                <div class="topmenu__button topmenu__button-mute m-unmuted"></div>
+                <a href="./settings.html">
+                    <div class="topmenu__button topmenu__button-settings"></div>
+                </a>
+            </div>
+        </div>
 
+        <div class="menu bubbles">
+            <div class="menu-center-block">
                 <div class="lowermenu">
+                    <a href="./menu_logged_in.html">
+                        <div class="title__up">
+                            Donuts Wars
+                        </div>
+                    </a>
                     <div class="title__sub">
                         About us
                     </div>
-                    <div class="about_content">
-                        This game is a web version of the Auralux for two players. The game is played on the field, which is an abstract space. Single-user
-                        mode is implemented using a bot. Every player has a bubble at the beginning of the game. Any bubble
-                        occupied by the player can generate units with a certain speed. The goal of the game is to capture
-                        all the located bubbles on the map. For each bubble belonging to the player that generated a certain
-                        number of units can used to capture both enemy and neutral bubbles. With the help of units, you can
-                        also to improve the bubbles already in the possession of the player.
-                    </div>
-                    <div class="about_authors_title">
-                        Authors
-                    </div>
-                    <div class="about_authors_content">
-                        Kamoldinova Victoria
-                        <br/> Samokhina Marina
-                        <br/> Vanyashkin Yura
+
+                    <div class="container_about">
+                        <p>This game is a web version of the Auralux for two players. The game is played on the field, which
+                            is an abstract space. Single-user mode is implemented using a bot. Every player has a bubble
+                            at the beginning of the game. Any bubble occupied by the player can generate units with a certain
+                            speed. The goal of the game is to capture all the located bubbles on the map. For each bubble
+                            belonging to the player that generated a certain number of units can used to capture both enemy
+                            and neutral bubbles. With the help of units, you can also to improve the bubbles already in the
+                            possession of the player.</p>
+                        <div class="title__sub">Authors</div>
+                        <p>Kamoldinova Victoria
+                            <br/> Samokhina Marina
+                            <br/> Vanyashkin Yury
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script src="../js/jQuery.min.js"></script>
+        <script type="text/javascript" src="../js/bubbles.js"></script>
     </body>
 
 </html>

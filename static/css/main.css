@@ -1,37 +1,11 @@
-html {
-    height: 100%;
-}
-
-body {
-    height: 100%;
-    margin: 0 0;
-    background-color: #0fc7ef;
-}
-
-.menu {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url("../assets/blue_font.png");
-    background-size: cover;
-    z-index: 0;
-    background-size: 100%;
-} 
-
-.menu-center-block {
-    height: 100%;
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
 @font-face {
     font-family: 'LuckiestGuy';
     src: url('../assets/fonts/LuckiestGuy-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Dunkin';
+    src: url('../assets/fonts/Dunkin.otf');
 }
 
 @font-face {
@@ -39,67 +13,75 @@ a {
     src: url('../assets/fonts/Nunito-ExtraLight.ttf');
 }
 
-.mainmenu__button-play {
-    width: 300px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 70px;
-    font-family: "LuckiestGuy";
-    user-select: none;
-    color: rgb(155, 155, 155);
-    transition: transform 0.5s;
-    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.2);
-    /* padding: 25px 80px 5px 80px; */
+html {
+    height: 100%;
+    width: 100%;
+    min-width: 25rem;
 }
 
-.mainmenu__button-play:hover {
-    opacity: 0.9;
-    /* font-size: 65px; */
-    transform: scale(1.2);
-    /* padding: 20px 80px 5px 80px; */
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #0fc7ef;
 }
 
-.mainmenu__button {
-    width: 300px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 45px;
-    font-family: "LuckiestGuy";
-    user-select: none;
-    color: gray;
-    transition: transform 0.5s;
-    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.2);
-     /* padding: 25px 80px 10px 80px; */
-     padding: 25px 0px 10px 0px;
+.menu {
+    height: 100%;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background: url("../assets/blue_font.png");
+    background-size: cover;
+    z-index: 0;
+    background-size: 100%;
 }
 
-.mainmenu__button:hover {
-    opacity: 0.9;
-    /* font-size: 60px; */
-    transform: scale(1.2);
-    padding: 25px 0px 10px 0px;
+.menu-center-block {
+    height: 90%;
+    width: 100%;
+    display: table;
+}
+
+a {
+    text-decoration: none;
 }
 
 .topmenu {
     height: 60px;
+    width: 100%;
     position: relative;
+    z-index: 1;
 }
 
-.topmenu_title__left-position {
+.topmenu__user {
     position: absolute;
-    top: 0;
-    right: 900px;
-    width: 180px;
-    height: 170px;
-    padding: 30px;
-    background: linear-gradient(to bottom, rgba(198, 203, 195, 0.7), rgba(198, 203, 195, 0));
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
 
-    text-align: center;
-    font-family: "LuckiestGuy";
-    color: #cdff90;
-    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
-    font-size: 300%;
-    user-select: none;
+.topmenu__user__avatar {
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+    background: url("/static/assets/avatar.jpg");
+    background-size: cover;
+    border-radius: 100%;
+    transition: transform 0.5s;
+}
+
+.topmenu__user__avatar:hover {
+    transform: scale(1.2);
+}
+
+.topmenu__user__name {
+    padding: 10px 0 0 8px;
+    font-family: "Nunito";
+    color: #f3f8f0;
+    font-size: 20px;
 }
 
 .topmenu_user__left-position {
@@ -143,8 +125,6 @@ a {
 .topmenu__button:hover {
     opacity: 0.8;
     transform: scale(1.2);
-    /* height: 50px;
-    width: 50px; */
 }
 
 .topmenu__button-mute.m-unmuted {
@@ -163,13 +143,83 @@ a {
     background-image: url('../assets/icons/i-back.png');
 }
 
+/* стили для центрального меню */
+
 .lowermenu {
-    display: flex;
-    flex-direction: column;
+    display: table-cell;
     align-items: center;
+    padding: 1rem 0;
+}
+
+.title {
+    text-align: center;
+    font-family: 'LuckiestGuy';
+    /* color: rgb(255, 130, 186); */
+    color: rgb(189, 186, 186);
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
+    font-size: 800%;
+    margin: 0px 40px 50px 40px;
+    user-select: none;
+    padding-top: 70px;
+}
+
+.title__up {
+    text-align: center;
+    font-family: 'LuckiestGuy';
+    /* color: rgb(255, 130, 186); */
+    color: rgb(189, 186, 186);
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
+    font-size: 800%;
+    margin: 0px 40px 0px 40px;
+    user-select: none;
+    padding-top: 20px;
+}
+
+.title__sub {
+    text-align: center;
+    font-family: "LuckiestGuy";
+    color: #c6cbc3;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.4);
+    font-size: 300%;
+    user-select: none;
+}
+
+.mainmenu__button-play {
+    text-align: center;
+    cursor: pointer;
+    font-size: 70px;
+    font-family: "LuckiestGuy";
+    user-select: none;
+    color: rgb(155, 155, 155);
+    transition: transform 0.5s;
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.mainmenu__button-play:hover {
+    opacity: 0.9;
+    transform: scale(1.2);
+}
+
+.mainmenu__button {
+    text-align: center;
+    cursor: pointer;
+    font-size: 45px;
+    font-family: "LuckiestGuy";
+    user-select: none;
+    color: gray;
+    transition: transform 0.5s;
+    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.2);
+    padding: 25px 0px 10px 0px;
+}
+
+.mainmenu__button:hover {
+    opacity: 0.9;
+    transform: scale(1.2);
+    padding: 25px 0px 10px 0px;
 }
 
 /*цвет текста?*/
+
 input {
     outline: none;
     height: 50px;
@@ -203,9 +253,9 @@ input.correct_input {
 }
 
 .input_block {
-    display: flex;
     flex-direction: row;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .error_text {
@@ -234,28 +284,6 @@ input.correct_input {
     background-size: cover;
 }
 
-.right_col {
-    width: 215px;
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-
-.center-outer {
-    display: table;
-    width: 100%;
-    height: 100%;
-}
-
-.center-inner {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-
 /* Essential CSS - Makes the effect bubble work */
 .bubbles {
     display: inline-block;
@@ -267,28 +295,13 @@ html, body {
     height: 200px;
     background: url("../assets/donut2.png");
     background-size: cover;
-
     position: absolute;
-    bottom: -150px;
+    bottom: -100px;
     z-index: -1;
+    transition: transform 550ms;
 }
 
 /* unuse in present moment*/
 .individual-bubble:hover {
-    width: 250px;
-    height: 200px;
-    background: url("../assets/donut2.png");
-    background-size: cover;
-
-    -webkit-transform: scale(1.2, 1.2);
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 100ms;
-    -moz-transform: scale(1.2, 1.2);
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 100ms;
-
-    position: absolute;
-    /* border-radius: 100%; */
-    bottom: -150px;
-    z-index: -1;
+    transform: scale(1.2, 1.2);
 }

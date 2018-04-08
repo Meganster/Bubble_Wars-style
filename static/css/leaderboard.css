@@ -47,24 +47,24 @@ col.place, col.score {
     height: 2.8rem;
     line-height: 2.8rem;
     text-align: center;
-    border-bottom: 1px dashed gray;
+    border-bottom: 1px solid gray;
     transition: transform 550ms;
 }
 
 .items tr:hover td {
-    border-bottom: 1px dashed white;
+    border-bottom: 1px solid white;
 }
 
 .items tr:hover td {
     transform: scale(1.1);
     text-shadow: 
-    0 0 30px #ff1212,
+    0 0 30px #fff,
     0 0 10px red;
 }
 
 .you {
     text-shadow: 
-    0 0 30px #ff1212,
+    0 0 30px #fff,
     0 0 10px red;
     font-weight: bold;
 }

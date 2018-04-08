@@ -7,48 +7,46 @@
     <link rel="shortcut icon" href="../assets/donut.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/settings.css">
 </head>
 
 <body>
+    <div class="topmenu">
+        <div class="topmenu__buttons-left_container">
+            <a href="./menu_logged_in.html">
+                <div class="topmenu__button topmenu__button-back" title="Back"></div>
+            </a>
+        </div>
+        <div class="topmenu__buttons-container">
+            <div class="topmenu__button topmenu__button-mute m-unmuted"></div>
+        </div>
+    </div>
+
     <div class="menu">
         <div class="menu-center-block">
-            <div class="topmenu">
-                <div class="topmenu__buttons-left_container">
-                    <a href="./menu_logged_in.html">
-                        <div class="topmenu__button topmenu__button-back" title="Back"></div>
-                    </a>
-                </div>
-                <div class="topmenu__buttons-container">
-                    <div class="topmenu__button topmenu__button-mute m-unmuted"></div>
-                </div>
-            </div>
-            <a href="./menu_logged_in.html">
-                <div class="title__up">
-                    Donuts Wars
-                </div>
-            </a>
-
             <div class="lowermenu">
+                <a href="./menu_logged_in.html">
+                    <div class="title__up">
+                        Donuts Wars
+                    </div>
+                </a>
                 <div class="title__sub">Settings</div>
-            </div>
-            <div class="volume-settings">
-                <div class="volume-settings__title">Set volume:</div>
-                <div class="volume-settings__slider">
-                    <input type="range" value="0" max="100" style="width: 200px" onchange="document.getElementById('rangeValue').innerHTML = this.value;">
-                    <span id="rangeValue" class="volume-settings__sound-level">0</span>
+                <div class="volume-settings">
+                    <div class="volume-settings__title">Set volume:</div>
+                    <div class="volume-settings__slider">
+                        <input type="range" value="0" max="100" style="width: 200px" onchange="document.getElementById('rangeValue').innerHTML = this.value;">
+                        <span id="rangeValue" class="volume-settings__sound-level">0</span>
+                    </div>
+                </div>
+                <div class="theme-settings">
+                    <div class="theme-settings__title">Select the theme of the game:</div>
+                    <div class="theme-settings__themes">
+                        <div class="theme-settings__themes__theme-block first-block"></div>
+                        <div class="theme-settings__themes__theme-block second-block"></div>
+                        <div class="theme-settings__themes__theme-block third-block"></div>
+                    </div>
                 </div>
             </div>
-            <div class="theme-settings">
-                <div class="theme-settings__title">Select the theme of the game:</div>
-                <div class="theme-settings__themes">
-                    <div class="theme-settings__themes__theme-block first-block"></div>
-                    <div class="theme-settings__themes__theme-block second-block"></div>
-                    <div class="theme-settings__themes__theme-block third-block"></div>
-                </div>
-            </div>
-
         </div>
     </div>
 </body>

@@ -1,43 +1,14 @@
-.menu-center-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.container_about {
+    min-width: 20rem;
+    margin: 0em 18em 18em;
 }
 
-.about_title {
-    text-align: center;
-    font-family: "LuckiestGuy";
-    color: #cdff90;
-    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
-    font-size: 800%;
-    margin: 0px 40px 0px 40px;
-    user-select: none;
-}
-
-.about_content {
-    text-align: center;
+.container_about p {
     font-family: "Nunito";
     color: white;
     font-size: 115%;
-    margin: -10px 40px 0px 40px;
-    user-select: none;
-}
-
-.about_authors_title {
     text-align: center;
-    font-family: "LuckiestGuy";
-    color: #cdff90;
-    text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4);
-    font-size: 300%;
-    margin: 0px 0px 0px 0px;
-    user-select: none;
-}
-
-.about_authors_content {
-    text-align: center;
-    font-family: "Nunito";
-    color: white;
-    font-size: 115%;
-    margin: -25px 40px 50px 40px;
-    user-select: none;
+    display: block;
+    margin: 1rem 0;
+    padding-bottom: 1rem;
 }

@@ -7,46 +7,44 @@
     <link rel="shortcut icon" href="../assets/donut.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/menu.css">
 </head>
 
 <body>
+    <div class="topmenu">
+        <div class="topmenu__user">
+            <a href="./profile.html">
+                <div class="topmenu__user__avatar"></div>
+            </a>
+            <div class="topmenu__user__name">samokhina</div>
+        </div>
+        <div class="topmenu__buttons-container">
+            <div class="topmenu__button topmenu__button-mute m-unmuted"></div>
+            <a href="./settings.html">
+                <div class="topmenu__button topmenu__button-settings"></div>
+            </a>
+        </div>
+        <!-- center top -->
+        <!-- <div class="top" style="text-align: center">
+            <div class="topmenu__buttons-container">
+                <a href="./profile.html">
+                    <div class="topmenu__button topmenu__user__avatar"></div>
+                </a>
+                <div class="topmenu__button topmenu__button-mute m-unmuted"></div>
+                <a href="./settings.html">
+                    <div class="topmenu__button topmenu__button-settings"></div>
+                </a>
+            </div>
+        </div> -->
+    </div>
+
     <div class="menu bubbles">
         <div class="menu-center-block">
-            <div class="topmenu">
-                <div class="topmenu__user">
-                    <a href="./profile.html">
-                        <div class="topmenu__user__avatar"></div>
-                    </a>
-                    <div class="topmenu__user__name">samokhina</div>
-                </div>
-                <div class="topmenu__buttons-container">
-                    <div class="topmenu__button topmenu__button-mute m-unmuted"></div>
-                    <a href="./settings.html">
-                        <div class="topmenu__button topmenu__button-settings"></div>
-                    </a>
-                </div>
-
-                <!-- center top -->
-                <!-- <div class="top" style="text-align: center">
-                    <div class="topmenu__buttons-container">
-                        <a href="./profile.html">
-                            <div class="topmenu__button topmenu__user__avatar"></div>
-                        </a>
-                        <div class="topmenu__button topmenu__button-mute m-unmuted"></div>
-                        <a href="./settings.html">
-                            <div class="topmenu__button topmenu__button-settings"></div>
-                        </a>
-                    </div>
-                </div> -->
-            </div>
-            <a href="./menu_logged_in.html">
-                <div class="title">
-                    Donuts Wars
-                </div>
-            </a>
-
             <div class="lowermenu">
+                <a href="./menu_logged_in.html">
+                    <div class="title">
+                        Donuts Wars
+                    </div>
+                </a>
                 <a href="./rooms.html">
                     <div class="mainmenu__button-play">Play</div>
                 </a>
@@ -62,10 +60,9 @@
             </div>
         </div>
     </div>
+
     <script src="../js/jQuery.min.js"></script>
-    <!-- <script type="text/javascript"
-        src="../js/bubbles.js"> -->
-    </script>
+    <script type="text/javascript" src="../js/bubbles.js"></script>
 </body>
 
 </html>

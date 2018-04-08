@@ -7,33 +7,33 @@
     <link rel="shortcut icon" href="../assets/donut.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/signup.css">
 </head>
 
 <body>
-    <div class="menu">
-        <div class="menu-center-block">
-            <div class="topmenu">
-                <div class="topmenu__buttons-left_container">
-                    <a href="./menu_logged_out.html">
-                        <div class="topmenu__button topmenu__button-back"></div>
-                    </a>
-                </div>
-                <div class="topmenu__buttons-container">
-                    <div class="topmenu__button topmenu__button-mute m-unmuted"></div>
-                    <a href="./settings.html">
-                        <div class="topmenu__button topmenu__button-settings"></div>
-                    </a>
-                </div>
-            </div>
+    <div class="topmenu">
+        <div class="topmenu__buttons-left_container">
             <a href="./menu_logged_out.html">
-                <div class="title">
-                    Donuts Wars
-                </div>
+                <div class="topmenu__button topmenu__button-back"></div>
             </a>
+        </div>
+        <div class="topmenu__buttons-container">
+            <div class="topmenu__button topmenu__button-mute m-unmuted"></div>
+            <a href="./settings.html">
+                <div class="topmenu__button topmenu__button-settings"></div>
+            </a>
+        </div>
+    </div>
 
+    <div class="menu bubbles">
+        <div class="menu-center-block">
             <div class="lowermenu">
+                <a href="./menu_logged_out.html">
+                    <div class="title">
+                        Donuts Wars
+                    </div>
+                </a>
+
                 <div class="input_block">
                     <input placeholder="email">
                 </div>
@@ -46,7 +46,7 @@
                     <input placeholder="password">
                 </div>
 
-                <div class="confirm password">
+                <div class="input_block confirm password">
                     <input placeholder="confirm password">
                 </div>
 
@@ -58,6 +58,9 @@
             </div>
         </div>
     </div>
+
+    <script src="../js/jQuery.min.js"></script>
+    <script type="text/javascript" src="../js/bubbles.js"></script>
 </body>
 
 </html>
