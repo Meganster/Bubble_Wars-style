@@ -8,5 +8,20 @@
     src: url('../assets/fonts/LuckiestGuy-Regular.ttf');
 }
 
+.go-to-login {
+    text-align: center;
+    font-family: Nunito;
+    color: #f3f8f0;
+    font-size: 18px;
+}
 
+.go-to-login__button {
+    color: gold;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.go-to-login__button:hover {
+    color: gray;
+}
 
