@@ -1,0 +1,330 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-ExtraLight.ttf');
+}
+
+.user {
+    /* width: 100%; */
+    flex-direction: row;
+    text-align: center;
+    padding-top: 20px;
+    user-select: none;
+}
+
+.user__left-col {
+    margin-left: 15%;
+    color: #f3f8f0;
+    font-family: 'Nunito';
+    font-size: 27px;
+}
+
+.user__left-col__rating {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.user__left-col__rating:hover {
+    border-color: #cdff90;
+}
+
+.highlight {
+    margin-right: 5px;
+    text-decoration: underline;
+}
+
+.user__left-col__email {
+    margin-top: 20px;
+}
+
+.user__left-col__change-password {
+    margin-top: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.user__left-col__change-password:hover {
+    color: gold;
+    border-color: gold;
+}
+
+.user__left-col__email {
+    display: flex;
+    flex-direction: row;
+}
+
+.user__left-col__email-address {
+    padding-left: 10px;
+}
+
+.user__left-col__email-address:hover {
+    color: #1f0b8f;
+}
+
+.user__right-col {
+    margin-left: 10%;
+    /* margin-right: 35%; */
+}
+
+/* avatar */
+/* .user__right-col__avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-image: url("/static/assets/avatar.jpg");
+    background-size: cover;
+    border-style: solid;
+    border-color: #f3f8f0;
+    overflow: hidden;
+} */
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.user__left-col__avatar {
+    background-image: url("/static/assets/avatar.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    margin-top: 50px;
+    margin-right: 50px;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    border-style: solid;
+    border-color: #f3f8f0;
+}
+
+.user__left-col__avatar:hover {
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+.user__left-col__avatar:hover .overlay {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.user__left-col__avatar:hover span {
+    font-family: 'Nunito';
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: transform .5s ease, opacity 1.3s ease;
+    transition: transform .5s ease, opacity 1.3s ease;
+}
+
+.user__left-col__avatar .overlay {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    margin: auto;
+    width: 0px;
+    height: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transition: .4s ease;
+    transition: .4s ease;
+}
+
+.user__left-col__avatar span {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: transform .5s ease, opacity .7s ease;
+    transition: transform .5s ease, opacity .7s ease;
+}
+
+.user__right-col__user-name {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Nunito';
+    font-size: 30px;
+    color: #f3f8f0;
+}
+
+.user__right-col__user-name:hover {
+    color: #1f0b8f;
+}
+
+/* inputs */
+/* задаем начальные значения */
+.field {
+    text-align: center;
+    font-family: 'Nunito';
+    --fieldBorderColor: #fff;
+    --fieldBorderColorActive: #fff;
+    --fieldPlaceholderColor: #fff;
+    color: #fff;
+}
+
+.field {
+    --uiFieldPaddingTop: var(--fieldPaddingTop, 0px);
+    --uiFieldPaddingRight: var(--fieldPaddingRight, 0px);
+    --uiFieldPaddingBottom: var(--fieldPaddingBottom, 0px);
+    --uiFieldPaddingLeft: var(--fieldPaddingLeft, 0px);
+    --uiFieldBorderColor: var(--fieldBorderColor, transpatent);
+    --uiFieldBorderTop: var(--fieldBorderTop, 0px);
+    --uiFieldBorderRight: var(--fieldBorderRight, 0px);
+    --uiFieldBorderBottom: var(--fieldBorderBottom, 0px);
+    --uiFieldBorderLeft: var(--fieldBorderLeft, 0px);
+    --uiFieldBgColor: var(--fieldBgColor, transpatent);
+    --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #fff);
+    --uiFieldAnimationDuration: var(--fieldAnimationDuration, .3s);
+    --uiFieldFonstSize: var(--fieldFontSize, 16px);
+    position: relative;
+    display: block;
+}
+
+.field__input {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--uiFieldBgColor);
+    /* for iOS */
+    appearance: none;
+    border-radius: 0;
+    border-style: solid;
+    border-color: var(--uiFieldBorderColor);
+    border-top-width: var(--uiFieldBorderTop);
+    border-right-width: var(--uiFieldBorderRight);
+    border-bottom-width: var(--uiFieldBorderBottom);
+    border-left-width: var(--uiFieldBorderLeft);
+    padding-top: var(--uiFieldPaddingTop);
+    padding-right: var(--uiFieldPaddingRight);
+    padding-bottom: var(--uiFieldPaddingBottom);
+    padding-left: var(--uiFieldPaddingLeft);
+    font-family: 'Nunito';
+    font-size: 100%;
+    color: #fff;
+}
+
+.field__input::-webkit-input-placeholder {
+    color: var(--uiFieldPlaceholderColor);
+    opacity: 0;
+}
+
+.field__input::-moz-placeholder {
+    color: var(--uiFieldPlaceholderColor);
+    opacity: 0;
+}
+
+.field__input:focus {
+    outline: none;
+}
+
+.field__input:focus::-webkit-input-placeholder {
+    transition: opacity var(--uiFieldAnimationDuration) ease-out var(--uiFieldAnimationDuration);
+    opacity: 1;
+}
+
+.field__input:focus::-moz-placeholder {
+    transition: opacity var(--uiFieldAnimationDuration) ease-out var(--uiFieldAnimationDuration);
+    opacity: 1;
+}
+
+.field__label-wrap {
+    height: 100%;
+    display: block;
+}
+
+.field__label {
+    position: absolute;
+    top: calc(0px + var(--uiFieldPaddingTop) + var(--uiFieldBorderTop));
+    left: calc(0px + var(--uiFieldPaddingLeft) + var(--uiFieldBorderLeft));
+    pointer-events: none;
+    font-size: .9em;
+    transition: top var(--uiFieldAnimationDuration) cubic-bezier(0.9, -0.15, 0.1, 1.15), opacity var(--uiFieldAnimationDuration) ease-out;
+    will-change: top, opacity;
+}
+
+.field__input:not(:placeholder-shown)~.field__label-wrap .field__label {
+    opacity: 0;
+    top: calc(0px + var(--uiFieldPaddingTop) + var(--uiFieldBorderTop));
+}
+
+.field__input:focus~.field__label-wrap .field__label {
+    opacity: 1;
+    top: calc(-1 * calc(var(--uiFieldPaddingTop) + var(--uiFieldBorderTop) + 15px));
+}
+
+/* type 4 */
+
+.field_type4 {
+    --uiFieldBorderBottom: var(--fieldBorderBottom, 2px);
+    --uiFieldPaddingTop: var(--fieldPaddingTop, 15px);
+    --uiFieldPaddingRight: var(--fieldPaddingRight, 15px);
+    --uiFieldPaddingBottom: var(--fieldPaddingBottom, 10px);
+    --uiFieldPaddingLeft: var(--fieldPaddingLeft, 15px);
+}
+
+.field_type4 .field__label-wrap:after {
+    content: "";
+    width: 100%;
+    height: 0;
+    box-sizing: border-box;
+    border-width: var(--uiFieldBorderBottom);
+    border-color: var(--fieldBorderColorActive);
+    border-style: solid;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    will-change: opacity, height;
+    transition: height var(--uiFieldAnimationDuration, .2s) ease-out, opacity var(--uiFieldAnimationDuration, .2s) ease-out;
+}
+
+.field_type4 .field__input:focus~.field__label-wrap:after {
+    height: 100%;
+    opacity: 1;
+}
+
+.items {
+    font-family: Nunito;
+    color: white;
+    width: 0;
+    min-width: 20rem;
+    margin: 1em auto auto;
+}
+
+.items td {
+    height: 2.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+    transition: transform 550ms;
+}
+
+.page__section{
+    width: 250px;
+}

@@ -28,56 +28,38 @@
             <div class="lowermenu">
                 <a href="menu_logged_in.html">
                     <div class="title__up">
-                        Bubble Wars
+                        Donuts Wars
                     </div>
                 </a>
                 <div class="title__sub">profile</div>
 
-                <div class="user">
-                    <div class="user__left-col">
-                        <div class="user__right-col__avatar">
-                            <div class="overlay"></div>
-                            <span>Click to update</span>
-                        </div>
-                    </div>
+                <table class="items">
+                    <col class="avatar">
+                    <col class="user-data">
+                    <tr>
+                        <td>
+                            <div class="container__avatar">
+                                <div class="overlay"></div>
+                                <span>Click to update</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input_block-top">
+                                <input class="input_block__profile" type="email" placeholder="Enter email" value="mail@mail.ru" required>
+                                <!-- <img src="/static/assets/pencil.png" class="pencil" style="disabled"> -->
+                            </div>
 
-                    <div class="user__right-col">
-                        <!-- <div class="user__left-col__rating">Rating:
-                            <div class="user__left-col__email-address">100500</div>
-                        </div>
-                        <div class="user__left-col__email">Email:
-                            <div class="user__left-col__email-address">bla-bla@bla.bla</div>
-                        </div>
-                        <div class="user__left-col__email">Nickname:
-                            <div class="user__left-col__email-address">samokhina</div>
-                        </div> -->
-                        <div class="page__section" style="margin-top: 10px">
-                            <label class="field field_type4">
-                                <input class="field__input" placeholder="Enter new nickname">
-                                <span class="field__label-wrap">
-                                    <span class="field__label">Samokhina</span>
-                                </span>
-                            </label>
-                        </div>
-                        <div class="page__section" style="margin-top: 10px">
-                            <label class="field field_type4">
-                                <input class="field__input" placeholder="Enter new email">
-                                <span class="field__label-wrap">
-                                    <span class="field__label">Samokhina@mail.ru</span>
-                                </span>
-                            </label>
-                        </div>
-                        <div class="page__section" style="margin-top: 10px">
-                            <label class="field field_type4">
-                                <input class="field__input" placeholder="Enter new password">
-                                <span class="field__label-wrap">
-                                    <span class="field__label">Your password</span>
-                                </span>
-                            </label>
-                        </div>
-                        <div class="user__left-col__change-password">change password</div>
-                    </div>
-                </div>
+                            <div class="input_block">
+                                <input class="input_block__profile" placeholder="Enter username" value="Samokhina" required>
+                            </div>
+
+                            <div class="input_block">
+                                <input class="input_block__profile" type="password" placeholder="Enter password" value="example" required>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="mainmenu__button">Save</div>
             </div>
         </div>
     </div>
